@@ -1,0 +1,21 @@
+TWO SET LOG - SETUP
+
+This is a starter web app, not an installed or hosted app. No account, analytics, external libraries, or server database is included. Workouts stay in browser localStorage.
+
+1. Extract this ZIP.
+2. Upload index.html, sw.js, and manifest.webmanifest together to a static website host with HTTPS. Keep the same site address for continued access to saved history. Hosting setup is separate; a hosting provider may require an account even though the workout app does not.
+3. Open the HTTPS site in Safari on your iPhone. Wait for the first page to finish loading online.
+4. Share > Add to Home Screen > enable Open as Web App if shown > Add.
+5. Launch from that Home Screen icon and use this same installation consistently. Test a sample workout, close and reopen, and verify it appears in History before relying on it. Test offline reopening after the first online load.
+
+FEATURES
+Two sets per exercise, autosaved draft, completed history, previous exercise results, reuse last workout exercise list, lb/kg, JSON backup and restore. Units are labels, not automatic conversions. Bodyweight sets can be logged as weight 0. No automatic cloud backup.
+
+BACKUPS
+Use Backup > Export backup regularly; store in Files or another safe place. Restore replaces existing data after confirmation. Clearing website data, removing browser storage, changing the site address, or losing the phone may lose access to the log. No recovery service exists. Safari and the installed web app should not be assumed to share storage. Export before moving between them.
+
+OFFLINE
+The service worker caches the app shell after a successful first load over HTTPS. Offline operation and persistence must be checked on your actual device. Opening the HTML as a downloaded file is not the supported iPhone installation route.
+
+TESTING
+Generated starter code; not tested on a physical iPhone. Export a backup before relying on this for your only copy of workout records.
